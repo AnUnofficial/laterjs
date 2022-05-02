@@ -10,21 +10,22 @@ add: function(process) {
 this.queue.push(process);
 },
 multi: function(process) {
-for(let i = 0; i < process.length; i++) {
+let len = process.length;
+for(let i = 0; i < len; i++) {
 this.queue.push(process[i]);
 }
 },
 run: function(index) {
-switch(index) {
-case typeof 0:
+switch(typeof index) {
+case "number":
 eval(queue[index]);
 this.queue.pop(index);
 break;
 default:
-for(let i = 0; i < this.get().length; i++) {
+let len = this.get().length;
+for(let i = 0; i < len; i++) {
 eval(this.queue[i]);
 }
 this.reset();
-}
 }
 }
