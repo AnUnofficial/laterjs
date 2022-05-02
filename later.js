@@ -9,10 +9,22 @@ this.queue = [];
 add: function(process) {
 this.queue.push(process);
 },
-run: function() {
+multi: function(process) {
+for(let i = 0; i < process.length; i++) {
+this.queue.push(process[i]);
+}
+},
+run: function(index) {
+switch(index) {
+case typeof 0:
+eval(queue[index]);
+this.queue.pop(index);
+break;
+default:
 for(let i = 0; i < this.get().length; i++) {
 eval(this.queue[i]);
 }
-this.reset;
+this.reset();
+}
 }
 }
