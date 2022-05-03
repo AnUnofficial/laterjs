@@ -81,7 +81,7 @@ break;
 default:
 let len = this.get ( ).length;
 for ( let i = 0; i < len; i++ ) {
-eval( this.queue [ i ] ); //Loop through all queue, evaluate, and reset
+eval( this.queue [ i ] );
 }
 this.reset ( "", 0 );
 }
