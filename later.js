@@ -3,7 +3,7 @@ queue: [ ],
 threads: [ ],
 ids: [ ],
 get: function ( type ) {
-switch( type ) {
+switch ( type ) {
 case 0:
 return this.queue;
 break;
