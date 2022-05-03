@@ -57,11 +57,11 @@ this.queue.push ( process [ i ] );
 }
 },
 run: function ( id, index ) { //I'm going to comment here, as later.run is a beast of a function
-switch( typeof id ) { //Check if user wants to run something from a thread
+switch ( typeof id ) { //Check if user wants to run something from a thread
 case "number":
-switch( typeof index ) { //Do they want to run something specific?
+switch ( typeof index ) { //Do they want to run something specific?
 case "number":
-eval(this.threads [ id ] [ index ] ); //If so, evaluate the index then pop it
+eval ( this.threads [ id ] [ index ] ); //If so, evaluate the index then pop it
 this.threads [ id ].pop ( index );
 break;
 default: //User wants to run all of thread
@@ -73,7 +73,7 @@ this.reset ( id, 1 );
 }
 break;
 default: //User wants to run through main queue
-switch( typeof index ) { //Does the user want to run something specific?
+switch ( typeof index ) { //Does the user want to run something specific?
 case "number":
 eval ( this.queue [ index ] ); //If so, evaluate the index then pop it
 this.queue.pop ( index );
