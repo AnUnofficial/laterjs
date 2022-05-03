@@ -67,7 +67,7 @@ break;
 default: //User wants to run all of thread
 let len = this.get ( 1 ) [ id ].length;
 for ( let i = 0; i < len; i++ ) { //Loop through all thread, evaluate, and reset
-eval ( this.threads [ id ] [ i ]);
+eval ( this.threads [ id ] [ i ] );
 }
 this.reset ( id, 1 );
 }
