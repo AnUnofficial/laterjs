@@ -1,4 +1,4 @@
-const later = { //The Self Evident Truth: Younger coders like me get some level of laxation from readable / maintainable code. This is fucking beyond that
+const later = {
 queue: [ ],
 threads: [ ],
 ids: [ ],
